@@ -110,14 +110,14 @@ the least-cost bridge that carries every vehicle.
 
 | Case | Expected | Actual |
 |---|---|---|
-| Semi at front axle x = 44 ft | Left reaction -4,266.7 lb; right reaction 76,266.7 lb (hand calculation) | App details table: left -4,266.7 lb; right 76,266.7 lb |
-| Car load total | 4,000 lb total vertical reaction (reference vehicle data) | Automated solver check: 4,000 lb total axle load and support reaction |
+| Semi at front axle x = 44 ft | Left reaction -4,266.7 lb; right reaction 76,266.7 lb (hand calculation) | App details: left -4,266.7 lb; right 76,266.7 lb. Panel 20–30 ft: top chord -26,133.3 lb (compression), bottom chord -4,266.7 lb (compression), diagonal -6,034.0 lb (compression) |
+| Car load total | 4,000 lb total vertical reaction (reference vehicle data) | App details: left 3,666.7 lb + right 333.3 lb = 4,000 lb; Car carried |
 | Mirrored centered load | Corresponding utilization values and reactions symmetric (property check) | Automated check passed: 5,000 lb at each support; mirrored member utilization matches within 1e-8 |
 
-At least one case must be confirmed by running the app, and the actual
-column must be updated with the displayed values before submission. The
-Pratt bridge should carry the car and dump truck and fail under the semi;
-the fire-engine result is also recorded by the scoreboard.
+The semi reactions and panel member forces were read from the app's details
+table. On the six-panel Pratt fixture, the scoreboard reported Car carried,
+Loaded dump truck carried, Semi failed at front axle position 12 ft, and Fire
+engine carried.
 
 ## Out of scope
 - No arbitrary span length, moving supports, non-grid joints, or editable

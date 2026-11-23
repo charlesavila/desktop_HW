@@ -55,3 +55,7 @@
 - Asked: “It works great. Move on to Stage 7”
   Changed: Added responsive stacked controls below 1,000 px, keyboard Delete/Escape actions, and visible handling for solver and vehicle-load errors. Kept the details panel below the plot with horizontal and vertical table scrolling, and set a taller minimum window size so both remain usable in stacked mode.
   Worked: Yes; UI checks passed for stacked and side-by-side layouts, details visibility and scrolling, Build/Test transitions preserving the bridge, invalid and duplicate clicks, keyboard actions, and solver error messaging. All seven calculation tests passed again.
+
+- Asked: “Build Stage 8”
+  Changed: Ran all seven solver tests, launched and closed `app.py`, built the six-panel Pratt truss through the app's drawing workflow, checked the semi and car reactions plus panel member forces in the details table, and ran all four vehicles through the scoreboard. Completed the actual validation results in `spec.md`.
+  Worked: Yes; the semi and car reaction values matched expectations, the Pratt carried Car and Loaded dump truck, failed the Semi at 12 ft, and carried the Fire engine. The mirrored-load property check passed.
