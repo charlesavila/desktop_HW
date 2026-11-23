@@ -1,0 +1,9 @@
+# Prompt log
+
+- Asked: “Using what is in AGENTS.md - the assignment instructions and requirements, fill out spec.md without changing or adding to the headers.”
+  Changed: Filled the existing sections in `spec.md` with the bridge-game purpose, platform, inputs, calculations, outputs, interface, validation cases/results table, and out-of-scope requirements; added no new Markdown headers. Created this prompt log as required by `AGENTS.md`.
+  Worked: Yes; the specification is complete and preserves all original headers.
+
+- Asked: “I am going to delete what is in the Agents file so make sure you communicate everything in the spec file.”
+  Changed: Added the request-log process and the optional future enhancement ideas to `spec.md`, so the assignment guidance is preserved there.
+  Worked: Yes; the remaining validation execution is explicitly identified as a required pre-submission check.
