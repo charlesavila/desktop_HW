@@ -11,3 +11,7 @@
 - Asked: “Come up with a plan on how you will build this in stages. Make a file named stages.md and fill it with your plan and the stages.”
   Changed: Created `stages.md` with an eight-stage implementation plan covering the project skeleton, Build mode, solver, validation, visualization, Test mode, robustness, and final verification.
   Worked: Yes; the staged plan and definition of done are documented.
+
+- Asked: “Read all the files, then build stage 1”
+  Changed: Added `app.py` with the initial Tkinter window, Build/Test mode controls, status bar, and empty canvas; added `bridge_logic.py` with NumPy-backed deck coordinates and the fixed span, grid, support, capacity, cost, and vehicle constants.
+  Worked: Partially; implementation is in place, but the requested launch/close check could not run because the available `python.exe` and `py.exe` launchers fail to start in this environment.
