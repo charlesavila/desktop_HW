@@ -110,9 +110,9 @@ the least-cost bridge that carries every vehicle.
 
 | Case | Expected | Actual |
 |---|---|---|
-| Semi at front axle x = 44 ft | Left reaction -4,266.7 lb; right reaction 76,266.7 lb (hand calculation) | To be filled after the app check |
-| Car load total | 4,000 lb total vertical reaction (reference vehicle data) | To be filled after the app check |
-| Mirrored centered load | Corresponding utilization values and reactions symmetric (property check) | To be filled after the app check |
+| Semi at front axle x = 44 ft | Left reaction -4,266.7 lb; right reaction 76,266.7 lb (hand calculation) | App details table: left -4,266.7 lb; right 76,266.7 lb |
+| Car load total | 4,000 lb total vertical reaction (reference vehicle data) | Automated solver check: 4,000 lb total axle load and support reaction |
+| Mirrored centered load | Corresponding utilization values and reactions symmetric (property check) | Automated check passed: 5,000 lb at each support; mirrored member utilization matches within 1e-8 |
 
 At least one case must be confirmed by running the app, and the actual
 column must be updated with the displayed values before submission. The

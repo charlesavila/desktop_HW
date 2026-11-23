@@ -35,3 +35,23 @@
 - Asked: “If you confirmed that it is done, move on to stage 5”
   Changed: Retried the Stage 4 unittest command. It still fails before Python starts because the `py.exe` launcher cannot be accessed; Stage 5 was not started because Stage 4 could not be confirmed.
   Worked: No; Stage 4 remains unverified pending a successful test run.
+
+- Asked: “how do I make it so you can run python?”
+  Changed: Located the installed interpreter at `C:\Users\charl\AppData\Local\Python\bin\python.exe` and used it to run the Stage 4 suite.
+  Worked: Yes; Python 3.15.2 ran all seven Stage 4 tests successfully. The Windows Store `py.exe` launcher is the broken executable; using the installed interpreter directly works.
+
+- Asked: “Now start building stage 5”
+  Changed: Embedded a Matplotlib bridge diagram with a one-foot grid, supports, joint/member labels, utilization colors and legend. Added a closed-by-default details panel with scrollable joint/reaction/load and member force/capacity/utilization tables. Preserved plot-based joint/member selection and grid snapping.
+  Worked: Implementation is in place; no Stage 5 runtime check has been run yet.
+
+- Asked: “test if 5 worked”
+  Changed: Ran Tkinter checks with the installed Python interpreter: opened and closed the app, confirmed details start hidden and toggle correctly, then loaded the Pratt fixture and semi axle case into the app and inspected both details tables and displayed reactions. Updated the validation results in `spec.md` with the verified values.
+  Worked: Yes; the app rendered 14 joints and 25 member rows, and displayed reactions of -4,266.7 lb at the left support and 76,266.7 lb at the right support.
+
+- Asked: “Perfect. Move on to building stage 6”
+  Changed: Added Test mode vehicle selection, Drive/Pause and Reset controls, front axle position display, per-vehicle scoreboard, side-view vehicles, per-step axle load and truss solving, automatic capacity failure stops, and black failed-member highlighting. Build and Test controls now switch with the selected mode.
+  Worked: Yes; the UI check passed. On the six-panel Pratt fixture, Car and Loaded dump truck were carried, the Semi failed at 12 ft with a black failed member, and Fire engine was carried. Drive/Pause, scoreboard, vehicle rendering, and mode control visibility also passed.
+
+- Asked: “It works great. Move on to Stage 7”
+  Changed: Added responsive stacked controls below 1,000 px, keyboard Delete/Escape actions, and visible handling for solver and vehicle-load errors. Kept the details panel below the plot with horizontal and vertical table scrolling, and set a taller minimum window size so both remain usable in stacked mode.
+  Worked: Yes; UI checks passed for stacked and side-by-side layouts, details visibility and scrolling, Build/Test transitions preserving the bridge, invalid and duplicate clicks, keyboard actions, and solver error messaging. All seven calculation tests passed again.
