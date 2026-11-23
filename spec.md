@@ -91,9 +91,9 @@ the least-cost bridge that carries every vehicle.
 ## Validation
 - Case 1 (hand calculation): use the required six-panel, 10 ft tall Pratt
   truss, then place the semi's front axle at x = 44 ft. The axle locations
-  are x = 44, 58, and 72 ft with loads 8,000, 32,000, and 32,000 lb.
+  are x = 44, 58, and 74 ft with loads 8,000, 32,000, and 32,000 lb.
   Taking moments about the left support gives
-  `R_B = (8,000*44 + 32,000*58 + 32,000*72)/60 =
+  `R_B = (8,000*44 + 32,000*58 + 32,000*74)/60 =
   76,266.7 lb`; vertical equilibrium gives `R_A = -4,266.7 lb`.
   The app's reaction table must match these values within 1 lb. Use the
   method-of-sections force values in the app's member table for the top chord,
